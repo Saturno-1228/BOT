@@ -1,0 +1,38 @@
+{
+  "bot_name": "Salomé",
+  "bot_username": "Salome_G_BOT",
+  "language": "es",
+  "moderation": {
+    "mode": "observe",
+    "delete_obvious_spam": false,
+    "temporary_mute_minutes": 10,
+    "permanent_bans_require_human": true,
+    "signal_cooldown_seconds": 30,
+    "signal_retention_days": 7,
+    "flood": {
+      "max_messages": 6,
+      "window_seconds": 10
+    },
+    "duplicates": {
+      "max_repetitions": 3,
+      "window_seconds": 60,
+      "minimum_length": 8
+    },
+    "links": {
+      "max_messages_with_links": 3,
+      "window_seconds": 60
+    },
+    "mentions": {
+      "max_mentions_per_message": 5
+    }
+  },
+  "ai": {
+    "enabled": false,
+    "moderation_confidence_threshold": 0.95,
+    "store_message_content": false
+  },
+  "security": {
+    "admin_log_enabled": true,
+    "rate_limit_per_user_per_minute": 10
+  }
+}

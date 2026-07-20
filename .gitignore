@@ -1,0 +1,33 @@
+# Secretos
+.env
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Datos y registros locales
+data/*
+!data/.gitkeep
+logs/*
+!logs/.gitkeep
+*.db
+*.sqlite
+*.sqlite3
+
+# Modelos locales: nunca deben entrar al repositorio
+models/
+*.gguf
+*.safetensors
+
+# Editores y sistema operativo
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
